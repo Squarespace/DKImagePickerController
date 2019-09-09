@@ -29,11 +29,10 @@ public class DKImageGroupDataManagerConfiguration: NSObject, NSCopying {
     
     /// The types of PHAssetCollection to display in the picker.
     public var assetGroupTypes: [PHAssetCollectionSubtype] = [
-        .smartAlbumUserLibrary,
-        .smartAlbumFavorites,
+        .any,
         .albumRegular
     ]
-    
+
     /// Options that specify a filter predicate and sort order for the fetched assets, or nil to use default options.
     @objc public var assetFetchOptions: PHFetchOptions?
     
